@@ -21,37 +21,37 @@ h1 {
 
 @font-face {
   font-family: "TT Hoves";
-  src: url("/styles/fonts/TTHoves/TTHoves-Light.woff") format("woff");
+  src: url("styles/fonts/TTHoves/TTHoves-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "TT Hoves";
-  src: url("/styles/fonts/TTHoves/TTHoves-Regular.woff") format("woff");
+  src: url("styles/fonts/TTHoves/TTHoves-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "TT Hoves";
-  src: url("/styles/fonts/TTHoves/TTHoves-Medium.woff") format("woff");
+  src: url("styles/fonts/TTHoves/TTHoves-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "TT Hoves";
-  src: url("/styles/fonts/TTHoves/TTHoves-Bold.woff") format("woff");
+  src: url("styles/fonts/TTHoves/TTHoves-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "SF Pro Display";
-  src: url("/styles/fonts/SFProDisplay/SFProDisplay-Black.woff") format("woff");
+  src: url("styles/fonts/SFProDisplay/SFProDisplay-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
 }
 @font-face {
   font-family: "Gothic A1";
-  src: url("/styles/fonts/GothicA1/GothicA1-Regular.woff") format("woff");
+  src: url("styles/fonts/GothicA1/GothicA1-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -825,7 +825,7 @@ h1 {
   }
 }
 .button__link::after {
-  content: url("/images/arrows/right.svg");
+  content: url("../images/arrows/right.svg");
   display: flex;
   align-items: center;
   justify-content: center;
@@ -852,7 +852,7 @@ h1 {
   transition: transform 0.5s;
 }
 .button__link_leisure::after {
-  content: url("/images/arrows/right-light.svg");
+  content: url("../images/arrows/right-light.svg");
   display: flex;
   align-items: center;
   justify-content: center;
@@ -879,7 +879,7 @@ h1 {
   transition: border 0.4s, box-shadow 0.4s;
 }
 .button__link--dark::after {
-  content: url("/images/arrows/right-light.svg");
+  content: url("../images/arrows/right-light.svg");
   display: flex;
   align-items: center;
   justify-content: center;
@@ -906,7 +906,7 @@ h1 {
   transition: transform 0.5s;
 }
 .button__link--dark_leisure::after {
-  content: url("/images/arrows/right-light.svg");
+  content: url("../images/arrows/right-light.svg");
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1169,7 +1169,7 @@ h1 {
   height: 100%;
 }
 .project_home__nav_arrow--left::after {
-  content: url("/images/arrows/left.svg");
+  content: url("../images/arrows/left.svg");
   width: 20px;
   height: 20px;
   transform: translateY(-40%);
@@ -1182,7 +1182,7 @@ h1 {
   height: 100%;
 }
 .project_home__nav_arrow--right::after {
-  content: url("/images/arrows/right.svg");
+  content: url("../../images/arrows/right.svg");
   width: 20px;
   height: 20px;
   transform: translateY(-40%);
@@ -1807,7 +1807,7 @@ h1 {
   top: 50%;
   transform: translate(-50%, -50%);
   content: "";
-  background-image: url("/images/contact_us/cross.svg");
+  background-image: url("../images/contact_us/cross.svg");
   background-size: 24px 24px;
   width: 24px;
   height: 24px;
@@ -1826,7 +1826,7 @@ h1 {
   top: 50%;
   transform: translate(-50%, -50%);
   content: "";
-  background-image: url("/images/contact_us/check_mark.svg");
+  background-image: url("../images/contact_us/check_mark.svg");
   background-size: 24px 24px;
   width: 24px;
   height: 24px;

@@ -45,7 +45,7 @@
     }
 
     &::after {
-      content: url("/images/arrows/right.svg");
+      content: url("../images/arrows/right.svg");
       display: flex;
       align-items: center;
       justify-content: center;
@@ -72,7 +72,7 @@
       transition: transform 0.5s;
 
       &::after {
-        content: url("/images/arrows/right-light.svg");
+        content: url("../images/arrows/right-light.svg");
         display: flex;
         align-items: center;
         justify-content: center;
@@ -102,7 +102,7 @@
       transition: border 0.4s, box-shadow 0.4s;
   
       &::after {
-        content: url("/images/arrows/right-light.svg");
+        content: url("../images/arrows/right-light.svg");
         display: flex;
         align-items: center;
         justify-content: center;
@@ -129,7 +129,7 @@
         transition: transform 0.5s;
   
         &::after {
-          content: url("/images/arrows/right-light.svg");
+          content: url("../images/arrows/right-light.svg");
           display: flex;
           align-items: center;
           justify-content: center;
