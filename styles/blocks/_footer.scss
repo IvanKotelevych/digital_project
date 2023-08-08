@@ -1,0 +1,120 @@
+.footer {
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+
+    color: white;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+
+    padding: 20px 20px;
+
+    @include onTablet {
+      flex-direction: row;
+      padding: 40px 40px;
+    }
+
+    @include onDesktop {
+      flex-direction: row;
+      padding: 60px 60px;
+    }
+
+    &_logo {
+      display: none;
+
+      @include onTablet {
+        display: inherit;
+        margin-right: 20px;
+      }
+  
+      @include onDesktop {
+        display: inherit;
+      }
+
+      &_link {
+        text-decoration: none;
+      }
+
+      &_image {
+        width: 145px;
+        height: 94px;
+
+        @include onTablet {
+          display: inherit;
+          width: 111px;
+          height: 72px;
+        }
+    
+        @include onDesktop {
+          display: inherit;
+          width: 145px;
+          height: 94px;
+        }
+      }
+    }
+
+    &_title {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+
+      height: 20px;
+      margin-bottom: 16px;
+
+      @include onTablet {
+        font-size: 16px;
+        margin-bottom: 25px;
+      }
+  
+      @include onDesktop {
+        font-size: 16px;
+        margin-bottom: 25px;
+      }
+    }
+
+    &_contacts {
+      @include onTablet {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  &__mark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--border-top {
+      border-top: 1px solid #383838;
+    }
+
+    &_title {
+      text-align: center;
+
+      color: #C8C8C880;
+      font-family: "Open Sans";
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px; 
+
+      padding: 12px;
+      margin: 0;
+
+      @include onTablet {
+        text-align: start;
+        padding: 24px;
+      }
+
+      @include onDesktop {
+        text-align: start;
+        padding: 24px;
+      }
+    }
+  }
+}

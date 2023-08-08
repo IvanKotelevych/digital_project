@@ -1,0 +1,21 @@
+.contact_us {
+  &__form {
+    margin-top: 22px;
+
+    &_image {
+      display: none;
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+
+      @include onTablet {
+        display: inherit;
+      }
+
+      @include onDesktop {
+        display: inherit;
+      }
+    }
+  }
+}

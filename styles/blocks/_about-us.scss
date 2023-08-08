@@ -1,0 +1,106 @@
+.about_us {
+  background-color: #FBFBFB;
+  padding: 30px 0;
+
+  &-container {
+    padding: 0 20px;
+
+    @include onTablet {
+      padding: 0 20px;
+    }
+
+    @include onDesktop {
+      padding: 0;
+    }
+  }
+
+  &__images {
+    display: none;
+
+    @include onTablet {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @include onDesktop {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-container {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    object-fit: contain;
+
+    transition: scale 0.4s;
+
+    &_el {
+      display: none;
+
+      @include onDesktop {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    &:hover {
+      scale: 1.03;
+
+      @include onTablet {
+        scale: 1.1;
+      }
+
+      @include onDesktop {
+        scale: 1.1;
+      }
+    }
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &_title {
+      color: $c-light-gray;
+      font-size: 28px;
+      font-weight: 300;
+      line-height: 28px;
+
+      @include onTablet {
+        font-size: 48px;
+        font-weight: 300;
+        line-height: 48px;
+      }
+  
+      @include onDesktop {
+        font-size: 48px;
+        font-weight: 300;
+        line-height: 48px;
+      }
+    }
+
+    &_text {
+      max-width: 100%;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 25px;
+
+      @include onTablet {
+        max-width: 400px;
+      }
+
+      @include onDesktop {
+        max-width: 400px;
+      }
+    }
+  }
+}

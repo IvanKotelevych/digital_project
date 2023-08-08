@@ -1,0 +1,209 @@
+.project_home {
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 0 0 0;
+
+    @include onSmallMobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      gap: 10px;
+      height: max-content;
+    }
+
+    @include onDesktop {
+      flex-direction: column;
+      align-items: start;
+      justify-content: end;
+      gap: 90px;
+
+      padding-bottom: 104px;
+    }
+
+    &_title {
+      display: flex;
+      flex-direction: column;
+
+      @include onSmallMobile {
+        align-items: center;
+      }
+
+      &_text {
+        width: max-content;
+        text-transform: uppercase;
+      }
+    }
+
+    &_arrows {
+      display: flex;
+      gap: 12px;
+
+      @include onTablet {
+        gap: 24px;
+      }
+
+      @include onDesktop {
+        gap: 24px;
+      }
+    }
+
+    &_arrow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      box-sizing: border-box;
+      border: 1px solid #F2F2F2;
+      width: 42px;
+      height: 42px;
+
+      font-family: "TT Hoves";
+      color: $c-gray;
+      font-size: 24px;
+      font-weight: 300;
+      cursor: pointer;
+
+      transition: border 0.5s, background-color 0.5s;
+
+      @include onTablet {
+        width: 54px;
+        height: 54px;
+      }
+
+      @include onDesktop {
+        width: 54px;
+        height: 54px;
+      }
+
+      &--active {
+        background: rgb(249, 249, 249);
+      }
+
+      &--left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        height: 100%;
+
+        &::after {
+          content: url("/images/arrows/left.svg");
+          width: 20px;
+          height: 20px;
+          transform: translateY(-40%);
+        }
+      }
+
+      &--right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        height: 100%;
+
+        &::after {
+          content: url("/images/arrows/right.svg");
+          width: 20px;
+          height: 20px;
+          transform: translateY(-40%);
+        }
+      }
+
+      &:hover {
+        background: rgb(249, 249, 249, 0.7);
+        border: 1px solid #ddd;
+      }
+    }
+
+    &_numbering {
+      display: flex;
+      gap: 20px;
+      height: 20px;
+
+      @include onTablet {
+        gap: 44px;
+        height: 31px;
+      }
+
+      @include onDesktop {
+        gap: 44px;
+        height: 31px;
+      }
+
+      &_number {
+        color: $c-light-gray;
+        font-family: "TT Hoves";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+
+        @include onTablet {
+          font-size: 24px;
+          line-height: 24px;
+        }
+  
+        @include onDesktop {
+          font-size: 24px;
+          line-height: 24px;
+        }
+      }
+
+      &_slash {
+        width: 2px;
+        height: 36px;
+        background-color: #E0E0E0;
+        transform: rotate(35deg) translateY(-8px) translateX(-4px);
+
+        @include onTablet {
+          height: 44px;
+          transform: rotate(45deg) translateY(-7px) translateX(-7px);
+        }
+  
+        @include onDesktop {
+          height: 44px;
+          transform: rotate(45deg) translateY(-7px) translateX(-7px);
+        }
+      }
+    }
+  }
+
+  &__projects {
+    position: relative;
+    display: flex;
+    height: 100%;
+
+    &_image {
+      width: 0%;
+      height: calc(50vh - 78px);
+      object-fit: cover;
+
+      transition: width 1s;
+
+      @include onSmallMobile {
+        height: calc(50vh - 160px);
+      }
+
+      @include onTablet {
+        height: calc(100vh - 266px);
+      }
+
+      @include onDesktop {
+        height: calc(100vh - 122px);
+      }
+    }
+
+    &_button {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+  }
+}

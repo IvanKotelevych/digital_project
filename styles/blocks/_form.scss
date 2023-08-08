@@ -1,0 +1,171 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &__input {
+    color: $c-gray;
+    font-family: "TT Hoves";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.56px;
+
+    box-sizing: border-box;
+    background: #F3F3F3;
+    height: 36px;
+    max-width: 364px;
+
+    margin-bottom: 10px;
+    padding: 14px 21px;
+
+    border: 1px solid #F3F3F3;
+    border-radius: 3px;
+
+    transition: border 0.3s;
+
+    @include onSmallMobile {
+      font-size: 11px;
+    }
+
+    @include onTablet {
+      height: 46px;
+      font-size: 14px;
+      max-width: none;
+      width: 100%;
+    }
+
+    @include onDesktop {
+      height: 46px;
+      font-size: 14px;
+      max-width: none;
+      width: 100%;
+    }
+
+    &::placeholder {
+      color: #8D8D8D;
+      font-family: "TT Hoves";
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.56px;
+
+      @include onSmallMobile {
+        font-size: 11px;
+      }
+
+      @include onTablet {
+        font-size: 14px;
+      }
+  
+      @include onDesktop {
+        font-size: 14px;
+      }
+    }
+
+    &:focus {
+      border-color: $c-gray;
+    }
+
+    &:hover {
+      border-color: $c-light-gray;
+    }
+  }
+
+  &__textarea {
+    color: $c-gray;
+    font-family: "TT Hoves";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.56px;
+
+    box-sizing: border-box;
+    background: #F3F3F3;
+    max-height: 132px;
+    max-width: 364px;
+
+    padding: 14px 21px;
+
+    border: 1px solid #F3F3F3;
+    border-radius: 3px;
+    resize: none;
+
+    transition: border 0.3s;
+
+    @include onSmallMobile {
+      font-size: 11px;
+    }
+
+    @include onTablet {
+      min-height: 147px;
+      font-size: 14px;
+      max-width: none;
+      width: 100%;
+    }
+
+    @include onDesktop {
+      height: 147px;
+      font-size: 14px;
+      max-width: none;
+      width: 100%;
+    }
+
+    &::placeholder {
+      color: #8D8D8D;
+      font-family: "TT Hoves";
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.56px;
+
+      @include onSmallMobile {
+        font-size: 11px;
+      }
+
+      @include onTablet {
+        font-size: 14px;
+      }
+  
+      @include onDesktop {
+        font-size: 14px;
+      }
+    }
+
+    &:focus {
+      border-color: $c-gray;
+    }
+
+    &:hover {
+      border-color: $c-light-gray;
+    }
+  }
+
+  &__checkbox {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    width: 100%;
+
+    color: #333;
+    font-family: "TT Hoves";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.42px;
+
+    @include onSmallMobile {
+      font-size: 12px;
+    }
+  }
+
+  &__submit {
+    padding: 0;
+    border: none;
+  }
+}

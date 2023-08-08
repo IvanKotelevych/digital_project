@@ -1,0 +1,148 @@
+.button {
+  width: 172px;
+  height: 60px;
+
+  @include onSmallMobile {
+    width: 124px;
+    height: 40px;
+  }
+
+  @include onTablet {
+    width: 222px;
+    height: 71px;
+  }
+
+  @include onDesktop {
+    width: 222px;
+    height: 71px;
+  }
+
+  &_leisure {
+    width: max-content;
+    height: max-content;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    box-sizing: border-box;
+    border: 1px solid white;
+
+    transition: border 0.4s, box-shadow 0.4s;
+
+    @include onTablet {
+      gap: 12px;
+    }
+
+    @include onDesktop {
+      gap: 12px;
+    }
+
+    &::after {
+      content: url("/images/arrows/right.svg");
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    &:hover {
+      border-color: #e5e5e5;
+      box-shadow: 0 0 6px $c-light-gray;
+    }
+
+    &_leisure {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+  
+      width: max-content;
+      height: max-content;
+      box-sizing: border-box;
+
+      transition: transform 0.5s;
+
+      &::after {
+        content: url("/images/arrows/right-light.svg");
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      &:hover {
+        transform: scale(0.9, 1);
+      }
+    }
+
+    &--dark {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+  
+      width: 100%;
+      height: 100%;
+      background-color: $c-gray;
+      box-sizing: border-box;
+      border: 2px solid $c-gray;
+  
+      transition: border 0.4s, box-shadow 0.4s;
+  
+      &::after {
+        content: url("/images/arrows/right-light.svg");
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        object-fit: cover;
+        object-position: center;
+      }
+  
+      &:hover {
+        border-color: black;
+        box-shadow: 0 0 8px $c-gray;
+      }
+  
+      &_leisure {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    
+        width: max-content;
+        height: max-content;
+        box-sizing: border-box;
+  
+        transition: transform 0.5s;
+  
+        &::after {
+          content: url("/images/arrows/right-light.svg");
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 24px;
+          height: 24px;
+          object-fit: cover;
+          object-position: center;
+        }
+  
+        &:hover {
+          transform: scale(0.9, 1);
+        }
+      }
+    }
+  }
+}

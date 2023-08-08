@@ -1,0 +1,53 @@
+.nav {
+  display: flex;
+  align-items: center;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: calc(100vh - 300px);
+    
+    @include onTablet {
+      flex-direction: row;
+      height: max-content;
+      justify-content: space-between;
+    }
+
+    @include onDesktop {
+      flex-direction: row;
+      height: max-content;
+      justify-content: space-between;
+    }
+
+    &_item {
+      display: flex;
+      align-items: center;
+      padding: 4px 0;
+      height: 34px;
+      width: max-content;
+
+      box-sizing: border-box;
+      border-bottom: 1px solid transparent;
+      border-top: 1px solid transparent;
+
+      transition: border-color 0.4s;
+
+      @include onTablet {
+        height: 18px;
+      }
+
+      @include onDesktop {
+        height: 22px;
+      }
+
+      &:hover {
+        border-color: $c-gray;
+      }
+    }
+  }
+}

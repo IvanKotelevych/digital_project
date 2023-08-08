@@ -1,0 +1,9 @@
+.binding-scroll {
+  &--start {
+    scroll-snap-align: start;
+  }
+
+  &--end {
+    scroll-snap-align: end;
+  }
+}

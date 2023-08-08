@@ -1,0 +1,39 @@
+.page {
+  scroll-snap-type: y proximity;
+
+  &__body {
+    font-family: 'TT Hoves';
+    margin: 0;
+  }
+
+  &__header {
+    padding: 0 20px;
+    font-weight: 400;
+
+    @include onTablet {
+      padding: 0 40px;
+    }
+
+    @include onDesktop {
+      padding: 0 60px;
+    }
+  }
+
+  &__main {
+    padding: 0 20px;
+    font-weight: 400;
+
+    @include onTablet {
+      padding: 0 40px;
+    }
+
+    @include onDesktop {
+      padding: 0 60px;
+    }
+  }
+
+  &__footer {
+    background-color: #2C2C2C;
+    font-weight: 500;
+  }
+}

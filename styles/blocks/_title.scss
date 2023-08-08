@@ -1,0 +1,135 @@
+.title {
+  &--light {
+    color: $c-light-gray;
+    font-family: "TT Hoves";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+
+    @include onTablet {
+      font-size: 64px;
+      line-height: 64px;
+    }
+
+    @include onDesktop {
+      font-size: 64px;
+      line-height: 64px;
+    }
+  }
+
+  &--bold {
+    &-white {
+      color: #fff;
+      font-family: "TT Hoves";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 18px;
+      text-transform: uppercase;
+
+      @include onTablet {
+        font-size: 42px;
+        line-height: 42px;
+      }
+  
+      @include onDesktop {
+        font-size: 64px;
+        line-height: 64px;
+      }
+    }
+
+    &-dark {
+      color: $c-gray;
+      font-family: "TT Hoves";
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px;
+      text-transform: uppercase;
+
+      @include onTablet {
+        font-size: 64px;
+        line-height: 64px;
+      }
+  
+      @include onDesktop {
+        font-size: 64px;
+        line-height: 64px;
+      }
+    }
+  }
+
+  &--header-nav {
+    color: $c-gray;
+    font-family: "TT Hoves";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
+
+    @include onTablet {
+      font-size: 14px;
+      line-height: 14px;
+      letter-spacing: 2px;
+    }
+
+    @include onDesktop {
+      font-size: 12px;
+      line-height: 12px;
+      letter-spacing: 2.4px;
+    }
+  }
+
+  &--button {
+    &-light {
+      color: #fff;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 10px;
+      letter-spacing: 2.4px;
+      text-transform: uppercase;
+
+      @include onSmallMobile {
+        font-size: 8px;
+        line-height: 8px;
+        letter-spacing: 1.8px;
+      }
+
+      @include onTablet {
+        font-size: 12px;
+        line-height: 12px;
+        letter-spacing: 2.4px;
+      }
+  
+      @include onDesktop {
+        font-size: 12px;
+        line-height: 12px;
+        letter-spacing: 2.4px;
+      }
+    }
+
+    &-dark {
+      color: $c-gray;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 10px;
+      letter-spacing: 2.4px;
+      text-transform: uppercase;
+
+      @include onTablet {
+        font-size: 12px;
+        line-height: 12px;
+        letter-spacing: 2.4px;
+      }
+  
+      @include onDesktop {
+        font-size: 12px;
+        line-height: 12px;
+        letter-spacing: 2.4px;
+      }
+    }
+  }
+}

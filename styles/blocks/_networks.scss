@@ -1,0 +1,41 @@
+.networks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+
+  @include onTablet {
+    align-items: start;
+    width: 194px;
+  }
+
+  @include onDesktop {
+    align-items: start;
+    width: 194px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 20px;
+
+    margin: 0;
+    padding: 0;
+
+    @include onTablet {
+      gap: 20px;
+    }
+
+    @include onDesktop {
+      gap: 40px;
+    }
+
+    &_item {
+      width: 22px;
+    }
+
+    &_image {
+      object-fit: contain;
+    }
+  }
+}

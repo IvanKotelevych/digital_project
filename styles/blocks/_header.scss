@@ -1,0 +1,64 @@
+.header {
+  &__container {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+    height: 100vh;
+
+    @include onTablet {
+      display: grid;
+      gap: 20px;
+      height: 78px;
+    }
+  
+    @include onDesktop {
+      display: grid;
+      gap: 30px;
+      height: 102px;
+    }
+
+    &_logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding-top: 50px;
+
+      @include onTablet {
+        justify-content: start;
+        padding: 0;
+      }
+
+      @include onDesktop {
+        justify-content: start;
+        padding: 0;
+      }
+
+      &_link {
+        text-decoration: none;
+      }
+
+      &__image {
+        width: 135px;
+        height: 85px;
+        object-fit: contain;
+
+        @include onTablet {
+          width: 78px;
+          height: 49px;
+        }
+
+        @include onDesktop {
+          width: 70px;
+          height: 44px;
+        }
+      }
+    }
+  }
+}
